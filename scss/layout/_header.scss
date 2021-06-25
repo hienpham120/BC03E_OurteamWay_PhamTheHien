@@ -1,0 +1,35 @@
+.header {
+  background-color: $color-transparent-1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav > a {
+    color: $color-dark-1;
+    margin: $mg-2;
+    font-size: $fs-1;
+    font-weight: $fw-2;
+    text-decoration: none;
+  }
+  .nav > a:hover {
+    color: $color-purple-1;
+  }
+  .right-box {
+    .contact {
+      background-color: $color-purple-2;
+      border-radius: 50px;
+      padding: $pd-9 $pd-10;
+      color: $color-white-1;
+    }
+  }
+  .right-box > a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: $color-dark-1;
+  }
+  .right-box > a:hover {
+    color: $color-purple-1;
+  }
+}

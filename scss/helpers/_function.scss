@@ -1,0 +1,7 @@
+//Sử dụng function để tránh nhầm lẫn khi truyền key
+// @function color($value) {
+//   @if map-has-key($map: $colors, $key: $value) {
+//     @return map-get($map: $colors, $key: $value);
+//   }
+//   @return "invalid key";
+// }

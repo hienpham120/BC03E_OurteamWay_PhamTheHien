@@ -1,5 +1,5 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,6 +8,12 @@
 
 .header {
   background-color: #00000000;
+}
+
+.header .nav {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
 }
 
 .header .container {
@@ -32,13 +38,20 @@
 
 .header .nav > a:hover {
   color: #bc2d8f;
+  border-bottom: 2px solid #bc2d8f;
 }
 
 .header .right-box .contact {
-  background-color: #aa017e;
+  background-color: #b61984;
   border-radius: 50px;
   padding: 15px 20px;
   color: #fff;
+}
+
+.header .right-box .contact:hover {
+  color: #bc2d8f;
+  background-color: #fff;
+  border: 1px solid #bc2d8f;
 }
 
 .header .right-box > a {
@@ -49,5 +62,118 @@
 
 .header .right-box > a:hover {
   color: #bc2d8f;
+}
+
+.carousel .img-top {
+  width: 100%;
+}
+
+.carousel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40rem;
+}
+
+.carousel .container > img {
+  width: 50%;
+}
+
+.carousel .container .intro > h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.carousel .container .intro > p {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.team {
+  background-image: url("");
+}
+
+.team .cardTeam {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: white;
+  display: block;
+}
+
+.team .cardTeam > img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.team .cardTeam .zoom:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out, -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+}
+
+.team .cardTeam h3 {
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.team .cardTeam .card-body {
+  width: 100%;
+  height: auto;
+}
+
+.team .cardTeam .card-body > p:first-child {
+  text-transform: uppercase;
+  color: #bc2d8f;
+  font-weight: 700;
+  padding: 0 0 0.4em;
+  line-height: 1.2;
+  clear: both;
+  margin: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.7em;
+}
+
+.team .cardTeam .card-body > p:nth-child(3) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.team .cardTeam:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*# sourceMappingURL=style.css.map */

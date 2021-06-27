@@ -1,6 +1,10 @@
 .header {
   background-color: $color-transparent-1;
-
+  .nav {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -15,6 +19,7 @@
   }
   .nav > a:hover {
     color: $color-purple-1;
+    border-bottom: 2px solid $color-purple-1;
   }
   .right-box {
     .contact {
@@ -22,6 +27,11 @@
       border-radius: 50px;
       padding: $pd-9 $pd-10;
       color: $color-white-1;
+    }
+    .contact:hover {
+      color: $color-purple-1;
+      background-color: $color-white-1;
+      border: 1px solid $color-purple-1;
     }
   }
   .right-box > a {

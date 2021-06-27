@@ -1,17 +1,30 @@
-// .carousel {
-//   background-image: url(../access/image/product-header-bg.jpg);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
+.carousel {
+  .img-top {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40rem;
 
-//   .container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     height: 40rem;
+    > img {
+      width: 50%;
+    }
 
-//     > img {
-//       width: 40%;
-//     }
-//   }
-// }
+    .intro > h1 {
+      font-size: $fs-2;
+      font-weight: $fw-2;
+      color: $color-purple-2;
+      margin-bottom: $mg-6;
+      text-transform: uppercase;
+    }
+    .intro > p {
+      position: relative;
+      z-index: 1;
+      display: block;
+      font-size: $fs-4;
+      font-weight: $fw-2;
+    }
+  }
+}

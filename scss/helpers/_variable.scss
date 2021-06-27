@@ -1,43 +1,15 @@
-//Font-size
-$text-xs: 0.875rem; //14px
-$text-sm: 1rem; //px
-$text-md: 1.4rem; //px
-$text-xs: 2rem; //32px
-$text-xl: 3rem; //48px
-$text-2xl: 4rem; //px
-$text-3xl: 5rem; //px
-
-//Font-weight
-$font-light: 300;
-$font-regular: 400;
-$font-medium: 500;
-$font-semibold: 600;
-$font-bold: 700;
-
-//Spacing
-$spacing-1: 0.25rem;
-$spacing-2: 0.5rem;
-$spacing-3: 0.75rem;
-$spacing-4: 1rem;
-$spacing-5: 1.25rem;
-$spacing-6: 1.5rem;
-$spacing-7: 1.75rem;
-$spacing-8: 2rem;
-$spacing-9: 3rem;
-$spacing-10: 4rem;
-$spacing-11: 5rem;
-
 //color
 $color-dark-1: #191919;
 $color-white-1: #fff;
 $color-white-2: #f9fbfa;
+$color-white-3: rgba(255, 255, 255, 1);
 $color-blue-1: #1d365e;
 $color-blue-2: #2a73dd;
 $color-blue-3: #c9d8f4;
 $color-yellow-1: #ffcf46;
 $color-yellow-2: #ffcf47;
 $color-purple-1: #bc2d8f;
-$color-purple-2: #aa017e;
+$color-purple-2: #b61984;
 $color-luckypoint-1: #202b52;
 $color-softpeach-1: #e8e1e1;
 $color-silver-1: #c4c4c4;
@@ -48,16 +20,20 @@ $color-transparent-1: #00000000;
 $fs-1: 13px;
 $fs-2: 1.1rem;
 $fs-3: 1.8rem;
-$fs-4: 70px;
+$fs-4: 3.8rem;
 $fs-5: 1.6rem;
 $fs-6: 2.25rem;
 $fs-7: 20px;
 $fs-8: 44px;
+$fs-9: 1.55rem;
+$fs-10: 0.75rem;
+$fs-11: 15px;
 
 //font weight
 $fw-1: 400;
 $fw-2: 600;
 $fw-3: 700;
+$fw-4: 900;
 
 //letter spacing
 $ls-1: 0.015rem;
@@ -65,7 +41,7 @@ $ls-2: 0.03rem;
 
 //Padding
 $pd-1: 25px;
-$pd-2: 225px;
+$pd-2: 20px;
 $pd-3: 13px;
 $pd-4: 44px;
 $pd-5: 100px;
@@ -81,6 +57,9 @@ $mg-2: 20px;
 $mg-3: 70px;
 $mg-4: 60px;
 $mg-5: 10px;
+$mg-6: 8px;
+$mg-7: 0.7em;
+$mg-8: 1em;
 
 //border
 $bd-1: 2px;

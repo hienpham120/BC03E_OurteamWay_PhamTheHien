@@ -8,6 +8,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awe Some CDN -->
     <link
       rel="stylesheet"
@@ -29,7 +36,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <img src="./assets/images/crest.png" alt="logo">
+        <img class="logo" src="./assets/images/crest.png" alt="logo" />
         <nav class="nav">
           <a href="#">Home</a>
           <a href="#">About</a>
@@ -42,23 +49,164 @@
           <a class="contact" href="#">
             <i class="fa fa-phone"> (+1) 555 234-8756</i>
           </a>
-          <a  href="#">
+          <a href="#">
             <i class="fab fa-twitter"></i>
           </a>
-          <a  href="#">
+          <a href="#">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a  href="#">
+          <a href="#">
             <i class="fab fa-youtube"></i>
           </a>
-          <a  href="#">
+          <a href="#">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
       </div>
     </header>
     <!-- End header -->
-    <div class="carousel"></div>
+    <section class="carousel">
+      <img
+        class="img-top"
+        src="./assets/images/yellow_top_wave_01.png"
+        alt="topimg"
+      />
+      <div class="container">
+        <div class="intro">
+          <h1>About us</h1>
+          <p>The language teaching experts</p>
+        </div>
+        <img src="./assets/images/hero_team.png" alt="intro" />
+      </div>
+    </section>
+    <!-- End carousel -->
+    <section class="team container">
+      <div class="team content">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_1.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">italian</p>
+                <h3>july roberts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_2.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">FRENCH</p>
+                <h3>Jon Stone</h3>
+                <p>Nanotechnology immersion along the information.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_3.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">JAPANESE</p>
+                <h3>Emma Stone</h3>
+                <p>Bring to the table win-win survival strategies to ensure.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_4.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">CHINESE</p>
+                <h3>Mark Lee</h3>
+                <p>Proactive domination. At the end of the day.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_5.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">RUSSIAN</p>
+                <h3>John Doe</h3>
+                <p>A new normal that has evolved from generation X.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_6.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">SWEDEN</p>
+                <h3>Jane Smith</h3>
+                <p>Heading towards a streamlined cloud solution.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_7.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">SPANISH</p>
+                <h3>Hanna Alverez</h3>
+                <p>Content in real-time will have multiple touchpoints.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-3">
+            <div class="card cardTeam">
+              <img
+                class="zoom"
+                src="./assets/images/teacher_1.jpg"
+                alt="teacher"
+              />
+              <div class="card-body">
+                <p class="card-body__country">italian</p>
+                <h3>july roberts</h3>
+                <p>Capitalize on low hanging fruit to identify a ballpark.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- End team -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -76,7 +224,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>
-

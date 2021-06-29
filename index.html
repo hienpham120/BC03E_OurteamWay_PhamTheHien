@@ -31,22 +31,25 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
-        <img class="logo" src="./assets/images/crest.png" alt="logo" />
-        <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Courses</a>
-          <a href="#">Blog</a>
-          <a href="#">Shop</a>
-          <a href="#">Element</a>
-        </nav>
+        <div class="left-box">
+          <img class="logo" src="./assets/images/crest.png" alt="logo" />
+          <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Blog</a>
+            <a href="#">Shop</a>
+            <a href="#">Element</a>
+          </nav>
+        </div>
         <div class="right-box">
-          <a class="contact" href="#">
+          <a class="right-box__contact w-100" href="#">
             <i class="fa fa-phone"> (+1) 555 234-8756</i>
           </a>
           <a href="#">
@@ -63,7 +66,96 @@
           </a>
         </div>
       </div>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/crest.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse nav__item"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ml-auto topnav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Carfax</a>
+              <a class="dropdown-item" href="#">Carproof</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Omnivic</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elements</a>
+          </li>
+          <li class="nav-item nav-item__phone">
+            <a class="nav-link" href="#">
+              <i class="fa fa-phone"> (+1) 555 234-8756</i>
+            </a>
+          </li>
+          <li class="nav-item nav-item__social">
+            <a class="nav-link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-item__social">
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-item__social">
+            <a class="nav-link" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-item__social">
+            <a class="nav-link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- End header -->
     <section class="carousel">
       <img
@@ -80,8 +172,8 @@
       </div>
     </section>
     <!-- End carousel -->
-    <section class="team container">
-      <div class="team content">
+    <section class="team">
+      <div class="team container content">
         <div class="row">
           <div class="col-md-3">
             <div class="card cardTeam">
@@ -202,11 +294,117 @@
               </div>
             </div>
           </div>
-          <!--  -->
         </div>
       </div>
     </section>
     <!-- End team -->
+    <section class="contact">
+      <div class="container">
+        <img
+          src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/conatct_inner.png"
+          data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/conatct_inner.png"
+          title="conatct_inner"
+          alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/conatct_inner.png"
+          class="btLazyLoadImage btLazyLoaded"
+        />
+        <div class="form-group form-box">
+          <p class="text-center form-box__title">Find Your Course</p>
+          <div class="row">
+            <div class="col">
+              <!-- <i class="fa fa-user"></i> -->
+              <input
+                type="text"
+                class="form-control form-box-item form-box__name"
+                id="txtName"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="email"
+                class="form-control form-box-item form-box__email"
+                id="txtEmail"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <select
+            class="form-control form-box-item form-box__language"
+            id="txtLanguage"
+          >
+            <option>English</option>
+            <option>French</option>
+            <option>Spanish</option>
+            <option>German</option>
+          </select>
+          <textarea
+            name="your-message"
+            cols="40"
+            rows="5"
+            class="form-control form-box-item form-box-message"
+            aria-invalid="false"
+            placeholder="Message"
+          ></textarea>
+          <button class="btn form-box__btn">send</button>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="col-md-3">
+          <div class="footer-content__info">
+            <h3>contact us</h3>
+            <div class="footer-content__item">
+              <i class="fa fa-map-marker-alt"> Franklin St, Greenpoint Ave</i>
+
+              <i class="fa fa-phone"> +2342 5446 67</i>
+
+              <i class="fa fa-clock"> Monday - Friday: 8 AM - 5 PM</i>
+
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-md-3">
+          <div class="footer-content__info">
+            <h3>quick link</h3>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Courses</a></p>
+            <p><a href="#">Schedule</a></p>
+            <p><a href="#">Blog</a></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-md-3">
+          <div class="footer-content__info">
+            <h3>about</h3>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Events</a></p>
+            <p><a href="#">Get quote</a></p>
+            <p><a href="#">Contact</a></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-md-3">
+          <div class="footer-content__info">
+            <h3>newsleter</h3>
+            <input
+              type="email"
+              class="footer-newsleter__email w-100"
+              placeholder="Your Email"
+            />
+            <button class="btn btn-white text-uppercase w-100">subcribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

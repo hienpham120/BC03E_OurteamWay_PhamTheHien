@@ -15,6 +15,7 @@ $color-softpeach-1: #e8e1e1;
 $color-silver-1: #c4c4c4;
 $color-fog-1: #d8cdef;
 $color-transparent-1: #00000000;
+$color-rgba-1: rgba(0, 0, 0, 0.1);
 
 //font size
 $fs-1: 13px;
@@ -28,6 +29,7 @@ $fs-8: 44px;
 $fs-9: 1.55rem;
 $fs-10: 0.75rem;
 $fs-11: 15px;
+$fs-12: 2.5rem;
 
 //font weight
 $fw-1: 400;
@@ -64,6 +66,11 @@ $mg-8: 1em;
 //border
 $bd-1: 2px;
 $bd-2: 8px;
+
+//border-r
+$bd-r-1: 10px;
+$bd-r-2: 18px;
+$bd-r-3: 50px;
 
 //break points
 $breakpoints: (

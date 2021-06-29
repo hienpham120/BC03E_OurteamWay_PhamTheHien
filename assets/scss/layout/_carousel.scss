@@ -13,9 +13,7 @@
     }
 
     .intro > h1 {
-      font-size: $fs-2;
-      font-weight: $fw-2;
-      color: $color-purple-2;
+      @include styleText($fs-2, $fw-2, $color-purple-2);
       margin-bottom: $mg-6;
       text-transform: uppercase;
     }
@@ -23,8 +21,7 @@
       position: relative;
       z-index: 1;
       display: block;
-      font-size: $fs-4;
-      font-weight: $fw-2;
+      @include styleTextBasic($fs-4, $fw-2);
     }
   }
 }

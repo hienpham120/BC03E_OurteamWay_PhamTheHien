@@ -1,0 +1,57 @@
+.footer {
+  background-image: url("/assets/images/footer_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: auto;
+  color: $color-white-1;
+  .container {
+    display: flex;
+    z-index: 1;
+    .footer-content__info {
+      text-transform: capitalize;
+      color: $color-white-1;
+
+      h3 {
+        @include styleText($fs-9, $fw-3, $color-white-1);
+      }
+      a {
+        text-decoration: none;
+        text-align: left;
+        @include styleText($fs-11, $fw-1, $color-white-1);
+      }
+      p {
+        border-bottom: 1px solid $color-rgba-1;
+      }
+      .footer-content__item {
+        @include styleText($fs-11, $fw-1, $color-white-1);
+      }
+      .footer-newsleter__email {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: $bd-r-3;
+        height: 3.2rem;
+        text-align: center;
+        background-color: $color-purple-2;
+
+        ::placeholder {
+          color: $color-white-1;
+          opacity: 1;
+        }
+      }
+      button {
+        margin-top: 10px;
+        background-color: $color-white-1;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: $bd-r-3;
+        height: 3.2rem;
+        text-align: center;
+      }
+      button:hover {
+        background-color: $color-purple-1;
+        border: 1px solid $color-white-1;
+        color: $color-white-1;
+      }
+    }
+  }
+}
